@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="articlePane" minHeight="407.0" prefHeight="407.0" prefWidth="281.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.techworld.controller.ArticleCardController">
+   <children>
+      <Label fx:id="articleTitle" alignment="TOP_LEFT" layoutX="14.0" layoutY="295.0" prefHeight="75.0" prefWidth="264.0" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="323.0">
+         <font>
+            <Font name="Nunito Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView fx:id="articleImage" fitHeight="264.0" fitWidth="264.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="9.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <Label fx:id="articlePrice" layoutX="14.0" layoutY="281.0" prefHeight="39.0" prefWidth="253.0" AnchorPane.bottomAnchor="87.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="281.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

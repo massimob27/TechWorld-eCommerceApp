@@ -1,0 +1,17 @@
+*{
+
+    -fx-text-fill: black;
+
+
+    borderColor: gray;
+
+    headerBGColor: #FF9429;
+    contentBGColor: #F9FFF5;
+
+
+
+}
+
+.icons-color {
+    -fx-icon-color: black;
+}

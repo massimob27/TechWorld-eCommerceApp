@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="articlePage" prefHeight="821.0" prefWidth="1091.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.techworld.controller.ArticlePageController">
+   <children>
+      <VBox layoutX="233.0" layoutY="108.0" prefHeight="474.0" prefWidth="344.0" AnchorPane.leftAnchor="233.0" AnchorPane.topAnchor="108.0">
+         <children>
+            <StackPane fx:id="stackPaneArticleImage" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="articlePageImage" fitHeight="344.0" fitWidth="344.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </StackPane>
+            <Label fx:id="articlePagePrice" alignment="TOP_LEFT" prefHeight="46.0" prefWidth="197.0">
+               <VBox.margin>
+                  <Insets top="22.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Nunito ExtraBold" size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonCart" mnemonicParsing="false" onAction="#addToCart" prefHeight="42.0" prefWidth="174.0" text="Aggiungi al carrello">
+               <VBox.margin>
+                  <Insets top="13.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="667.0" layoutY="108.0" prefHeight="411.0" prefWidth="512.0" AnchorPane.leftAnchor="667.0" AnchorPane.topAnchor="108.0">
+         <children>
+            <Text fx:id="articlePageTitle" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="485.0">
+               <font>
+                  <Font name="Nunito Bold" size="24.0" />
+               </font>
+            </Text>
+            <Label fx:id="articlePageDescLabel" prefHeight="33.0" prefWidth="269.0" text="Descrizione del prodotto">
+               <font>
+                  <Font name="Nunito Bold" size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Text fx:id="articlePageDescription" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="586.0">
+               <VBox.margin>
+                  <Insets bottom="60.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Nunito Regular" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

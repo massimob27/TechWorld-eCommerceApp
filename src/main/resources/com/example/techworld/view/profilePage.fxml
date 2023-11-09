@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="profilePane" prefHeight="846.0" prefWidth="1326.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.techworld.controller.ProfilePageController">
+   <children>
+      <VBox prefHeight="79.0" prefWidth="1326.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane fx:id="topProfilePane" prefHeight="85.0" prefWidth="1326.0">
+               <children>
+                  <Label layoutX="344.0" layoutY="11.0" prefHeight="56.0" prefWidth="270.0" text="Dettagli account">
+                     <font>
+                        <Font name="Nunito Regular" size="32.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="logoutButton" layoutX="978.0" layoutY="20.0" mnemonicParsing="false" onAction="#doLogout" prefHeight="38.0" prefWidth="218.0" text="Esci dall'account">
+                     <font>
+                        <Font name="Nunito ExtraBold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Separator fx:id="topProfileSeparator" prefHeight="3.0" prefWidth="1326.0" />
+         </children>
+      </VBox>
+      <ListView fx:id="orderListDisplay" layoutX="139.0" layoutY="168.0" prefHeight="520.0" prefWidth="506.0" AnchorPane.leftAnchor="139.0" AnchorPane.topAnchor="168.0" />
+      <Label fx:id="orderListLabel" layoutX="139.0" layoutY="110.0" prefHeight="46.0" prefWidth="506.0" text="Storico degli ordini" AnchorPane.leftAnchor="139.0" AnchorPane.topAnchor="110.0">
+         <font>
+            <Font name="Nunito Bold" size="28.0" />
+         </font>
+      </Label>
+      <Separator layoutX="765.0" layoutY="79.0" orientation="VERTICAL" prefHeight="633.0" prefWidth="12.0" AnchorPane.leftAnchor="765.0" AnchorPane.topAnchor="79.0" />
+      <Label layoutX="843.0" layoutY="173.0" text="Username" AnchorPane.leftAnchor="843.0" AnchorPane.topAnchor="173.0">
+         <font>
+            <Font name="Nunito Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="843.0" layoutY="517.0" text="Email aziendale" AnchorPane.leftAnchor="843.0" AnchorPane.topAnchor="517.0">
+         <font>
+            <Font name="Nunito Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="843.0" layoutY="286.0" text="Numero di telefono" AnchorPane.leftAnchor="843.0" AnchorPane.topAnchor="286.0">
+         <font>
+            <Font name="Nunito Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="843.0" layoutY="387.0" text="Email" AnchorPane.leftAnchor="843.0" AnchorPane.topAnchor="387.0">
+         <font>
+            <Font name="Nunito Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernameGraphic" layoutX="938.0" layoutY="175.0" prefHeight="22.0" prefWidth="40.0" AnchorPane.leftAnchor="938.0" AnchorPane.topAnchor="175.0" />
+      <Label fx:id="phoneGraphic" layoutX="1019.0" layoutY="289.0" prefHeight="22.0" prefWidth="40.0" AnchorPane.leftAnchor="1019.0" AnchorPane.topAnchor="289.0" />
+      <Label fx:id="emailGraphic" layoutX="899.0" layoutY="390.0" prefHeight="17.0" prefWidth="40.0" AnchorPane.leftAnchor="899.0" AnchorPane.topAnchor="390.0" />
+      <Label fx:id="businessGraphic" layoutX="990.0" layoutY="520.0" prefHeight="17.0" prefWidth="40.0" AnchorPane.leftAnchor="990.0" AnchorPane.topAnchor="520.0" />
+      <Label fx:id="usernameLabel" layoutX="843.0" layoutY="203.0" prefHeight="29.0" prefWidth="409.0" text="Label" AnchorPane.leftAnchor="843.0" AnchorPane.topAnchor="203.0">
+         <font>
+            <Font name="Nunito Regular" size="20.0" />
+         </font></Label>
+      <Label fx:id="phoneLabel" layoutX="843.0" layoutY="317.0" prefHeight="29.0" prefWidth="409.0" text="Label" AnchorPane.leftAnchor="843.0" AnchorPane.topAnchor="317.0">
+         <font>
+            <Font name="Nunito Regular" size="20.0" />
+         </font></Label>
+      <Label fx:id="businessLabel" layoutX="843.0" layoutY="549.0" prefHeight="29.0" prefWidth="409.0" AnchorPane.leftAnchor="843.0" AnchorPane.topAnchor="549.0">
+         <font>
+            <Font name="Nunito Regular" size="20.0" />
+         </font></Label>
+      <Label fx:id="emailLabel" layoutX="843.0" layoutY="418.0" prefHeight="29.0" prefWidth="409.0" text="Label" AnchorPane.leftAnchor="843.0" AnchorPane.topAnchor="418.0">
+         <font>
+            <Font name="Nunito Regular" size="20.0" />
+         </font></Label>
+      <Button fx:id="downloadDataButton" layoutX="505.0" layoutY="119.0" mnemonicParsing="false" onAction="#downloadAction" prefHeight="25.0" prefWidth="140.0" text="Scarica dati" AnchorPane.leftAnchor="505.0" AnchorPane.topAnchor="119.0">
+         <font>
+            <Font name="Nunito Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="686.0" prefWidth="1011.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.techworld.controller.MainController">
+   <top>
+      <AnchorPane prefHeight="70.0" prefWidth="1011.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="hboxTechWorld" prefHeight="66.0" prefWidth="1011.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <children>
+                  <Label fx:id="mainPageLabel" alignment="CENTER" prefHeight="73.0" prefWidth="174.0" text="TechWorld">
+                     <font>
+                        <Font name="Nunito Regular" size="30.0" />
+                     </font>
+                  </Label>
+                  <Separator fx:id="toolBarSeparator" orientation="VERTICAL" prefHeight="200.0" prefWidth="0.0">
+                     <HBox.margin>
+                        <Insets right="-3.0" />
+                     </HBox.margin>
+                  </Separator>
+                  <AnchorPane prefHeight="66.0" prefWidth="834.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ToolBar prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <items>
+                              <Pane prefHeight="60.0" prefWidth="6.0" />
+                            <Button fx:id="catalogo" contentDisplay="CENTER" mnemonicParsing="false" onAction="#goCatalog" prefHeight="51.0" prefWidth="177.0" text="Catalogo">
+                                 <font>
+                                    <Font name="Segoe UI Symbol" size="22.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="vendere" contentDisplay="CENTER" mnemonicParsing="false" onAction="#goSell" prefHeight="51.0" prefWidth="113.0" text="Vendi">
+                                 <font>
+                                    <Font name="Segoe UI Symbol" size="22.0" />
+                                 </font></Button>
+                              <Button fx:id="informazioni" contentDisplay="CENTER" mnemonicParsing="false" onAction="#goInfo" prefHeight="51.0" text="Informazioni">
+                                 <font>
+                                    <Font name="Segoe UI Symbol" size="22.0" />
+                                 </font></Button>
+                              <Pane prefHeight="60.0" prefWidth="195.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label fx:id="messaggioDiBenvenuto" layoutY="6.0" prefHeight="48.0" prefWidth="498.0" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="21.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="42.0" />
+                                       </padding>
+                                    </Label>
+                                 </children></Pane>
+                              <Button fx:id="carrello" alignment="CENTER" mnemonicParsing="false" onAction="#goCartCheck" prefHeight="51.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="profilo" alignment="CENTER" mnemonicParsing="false" onAction="#goProfile" prefHeight="51.0">
+                                 <font>
+                                    <Font name="Nunito Light" size="18.0" />
+                                 </font>
+                              </Button>
+                          </items>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ToolBar>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane fx:id="anchorUnderTechWorld" prefHeight="616.0" prefWidth="176.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="cambiaTema" contentDisplay="CENTER" mnemonicParsing="false" onAction="#goChangeTheme" prefHeight="54.0" prefWidth="176.0" text="Cambia tema" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Segoe UI Symbol" size="20.0" />
+               </font>
+            </Button>
+            <Separator layoutX="174.0" orientation="VERTICAL" prefHeight="616.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <ScrollPane fx:id="mainPage" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

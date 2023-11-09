@@ -1,0 +1,163 @@
+
+#articlePageTitle, #articlePageDescription, #articlePagePrice{
+    -fx-fill: white;
+}
+
+
+
+#registrationLabel, #sellLabel{
+    -fx-text-fill: #598ACF;
+}
+
+
+
+
+
+
+
+
+#cartPageDisplay, #orderListDisplay{
+    -fx-background-color: #19273B;
+}
+
+
+
+
+
+
+
+.text-field, .password-field{
+    -fx-background-color: #364662;
+}
+
+.text-area .content {
+    -fx-background-color: #364662;
+}
+
+
+
+
+
+
+
+.icons-color{
+    -fx-icon-color: white;
+}
+
+#carrello .icons-color, #profilo .icons-color{
+    -fx-icon-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+
+    -fx-text-fill: white;
+
+
+    scrollColor: #598ACF;
+
+
+
+    borderColor: #162233;
+
+    pageColorOne: #19273B;
+    loginRegPageSeparatorColor: #D9DED5;
+
+    stackPaneImageColor: #4DA6FF;
+
+
+
+
+    separatorAndBorderColor: gray;
+
+
+
+
+    articlePaneBGColor: #2D3A52;
+    articlePaneBorderColor: #598ACF;
+
+
+    articleTitleFocusColor: #4DA6FF;
+
+
+
+
+
+
+    profilePaneColor: #19273B;
+
+
+
+
+
+
+
+    orderListBorderColor: white;
+
+    ListViewTextColor: white;
+
+    cartPageDisplayColor: #19273B;
+
+    cartInstanceRemoveHover: #4DA6FF;
+
+
+
+
+
+
+
+
+
+
+
+    /* PULSANTI */
+
+    addToCartButtonColorFirst: #B89900;       /* colore pulsante aggiunta al carrello dalla pagina articolo */
+    addToCartButtonColorSecond: #C4A300;   /* quando il cursore ci va sopra */
+    addToCartButtonColorThird: #D6B200;    /* colore quando premuto */
+
+
+
+
+
+   buyButtonsAndDownloadFirst: #35AB35;
+   buyButtonsAndDownloadSecond: #3CC23C;
+   buyButtonsAndDownloadThird: #44DB44;
+
+
+
+   coloredButtonText: white;
+
+
+   logoutButtonFirst: #B30E0E;
+   logoutButtonSecond: #C91010;
+   logoutButtonThird: #D91111;
+
+
+
+
+
+
+
+
+    rulesAndSecondaryButtonBGColor: #2E2E2E;
+    rulesAndSecondaryButtonColor: #575757;
+
+
+    buttonPressedColor: #6E6E6E;
+
+
+}
+
+
+

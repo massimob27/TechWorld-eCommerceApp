@@ -1,0 +1,535 @@
+/* REGOLE GENERALI SCROLL, SPLITPANE (LOGIN/REG) TOOL BAR ETC.. */
+
+.tool-bar {
+    -fx-spacing: 30;
+}
+
+.scroll-pane {
+    -fx-background-color : transparent;
+}
+
+.split-pane:horizontal > .split-pane-divider {
+   -fx-cursor: default;
+}
+
+
+
+
+
+
+/*  ISTANZE ORDINI    */
+
+
+#orderListDisplay{
+    -fx-background-insets: 0 ;
+    -fx-border-color: orderListBorderColor;
+}
+
+
+#orderListDisplay .list-cell{
+    -fx-background-color: pageColorOne;
+    -fx-text-fill: ListViewTextColor;
+}
+
+
+
+
+
+
+
+
+#downloadDataButton{
+    -fx-background-color: buyButtonsAndDownloadFirst;
+    -fx-text-fill: coloredButtonText;
+
+}
+
+
+#downloadDataButton:hover{
+    -fx-background-color: buyButtonsAndDownloadSecond;
+
+}
+
+
+#downloadDataButton:pressed{
+    -fx-background-color: buyButtonsAndDownloadThird;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGINA PROFILO  */
+
+#profilePane{
+    -fx-background-color: profilePaneColor;
+}
+
+
+#topProfilePane{
+    -fx-background-color: pageColorOne;
+}
+
+#topProfileSeparator.separator .line{
+    -fx-border-color: separatorAndBorderColor;
+}
+
+
+
+
+
+
+#logoutButton{
+    -fx-background-color: logoutButtonFirst;
+    -fx-text-fill: coloredButtonText;
+
+}
+
+
+
+#logoutButton:hover{
+    -fx-background-color: logoutButtonSecond;
+
+}
+
+
+
+#logoutButton:pressed{
+    -fx-background-color: logoutButtonThird;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  PAGINA CARRELLO e istanze carrello */
+
+
+
+
+
+
+#cartPage{
+    -fx-background-color: pageColorOne;
+}
+
+#cartPageSeparator.separator .line{
+    -fx-border-color: separatorAndBorderColor;
+}
+
+#cartInstanceRemove:hover{
+    -fx-underline: true;
+    -fx-text-fill: cartInstanceRemoveHover;
+
+}
+
+
+
+
+
+
+#cartPageDisplay{
+    -fx-background-insets: 0 ;
+}
+
+
+.list-cell:filled{
+    -fx-border-color: transparent transparent separatorAndBorderColor transparent;
+}
+
+
+#cartPageDisplay .list-cell{
+    -fx-background-color: cartPageDisplayColor;
+
+}
+
+.list-view:focused .list-cell:filled:focused:selected {
+     -fx-background: cartPageDisplayColor;
+}
+
+
+
+
+
+
+
+
+
+
+#buySingleArticleButton, #cartInstancePlus, #cartInstanceMinus, #buyAllButton{
+    -fx-focus-color: transparent;
+
+}
+
+
+#buySingleArticleButton{
+    -fx-background-color: buyButtonsAndDownloadFirst;
+    -fx-text-fill: coloredButtonText;
+
+}
+
+
+#buySingleArticleButton:hover{
+    -fx-background-color: buyButtonsAndDownloadSecond;
+
+}
+
+
+#buySingleArticleButton:pressed{
+    -fx-background-color: buyButtonsAndDownloadThird;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#buyAllButton{
+    -fx-background-color: buyButtonsAndDownloadFirst;
+    -fx-text-fill: coloredButtonText;
+
+}
+
+
+
+#buyAllButton:hover{
+    -fx-background-color: buyButtonsAndDownloadSecond;
+
+}
+
+
+
+#buyAllButton:pressed{
+    -fx-background-color: buyButtonsAndDownloadThird;
+}
+
+
+
+
+
+
+
+
+
+
+#cartInstanceMinus, #cartInstancePlus{
+    -fx-background-color: rulesAndSecondaryButtonBGColor;
+}
+
+#cartInstanceMinus:hover, #cartInstancePlus:hover{
+    -fx-background-color: rulesAndSecondaryButtonColor;
+}
+
+#cartInstanceMinus:pressed, #cartInstancePlus:pressed{
+    -fx-background-color: buttonPressedColor;
+}
+
+
+
+
+
+
+
+
+
+/* PAGINA ARTICOLO  */
+
+
+
+
+
+
+
+#articlePage{
+    -fx-background-color: pageColorOne;
+}
+
+#stackPaneArticleImage{
+    -fx-padding: 3;
+    -fx-background-color: separatorAndBorderColor;
+
+    -fx-background-radius: 6;
+
+}
+
+
+
+
+
+
+
+#buttonCart{
+    -fx-background-color: addToCartButtonColorFirst;
+
+}
+
+#buttonCart:hover{
+    -fx-background-color: addToCartButtonColorSecond;
+
+}
+
+#buttonCart:pressed{
+    -fx-background-color: addToCartButtonColorThird;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ARTICOLI E PAGINA CHE LI MOSTRA */
+
+
+
+#displayPageSeparator.separator .line{
+    -fx-border-color: separatorAndBorderColor;
+
+}
+
+#displayPage{
+    -fx-background-color: pageColorOne;
+
+}
+
+#articlePane{       /*  PER COLORARE GLI SFONDI DELLE CARD        */
+    -fx-background-color: articlePaneBGColor;
+    -fx-border-color: articlePaneBorderColor;
+
+
+    /* aggiunto dopo */
+
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+
+
+}
+
+#articleTitle:hover{
+    -fx-text-fill: articleTitleFocusColor;
+
+}
+
+
+
+
+
+
+
+
+
+#researchButton{
+    -fx-background-color: transparent;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* PAGINA INSERIMENTO VENDITA */
+
+
+
+
+
+#sellPage{
+    -fx-background-color: pageColorOne;
+}
+
+
+#stackPaneImmagine{
+    -fx-border-width: 2;
+    -fx-border-color: stackPaneImageColor;
+
+}
+
+
+
+
+
+
+
+
+
+
+#pulsanteInserimento, #pulsanteEliminazioneFoto{
+
+    -fx-background-color:
+            #707070,
+            linear-gradient(#fcfcfc, #f3f3f3),
+            linear-gradient(#f2f2f2 0%, #ebebeb 49%, #dddddd 50%, #cfcfcf 100%);
+        -fx-background-insets: 0,1,2;
+        -fx-background-radius: 3,2,1;
+        -fx-padding: 3 30 3 30;
+        -fx-font-family: "Helvetica";
+        -fx-font-size: 11px;
+
+}
+
+#pulsanteInserimento, #pulsanteEliminazioneFoto{
+    -fx-background-color: rulesAndSecondaryButtonBGColor;
+}
+
+#pulsanteInserimento:hover, #pulsanteEliminazioneFoto:hover{
+    -fx-background-color: rulesAndSecondaryButtonColor;
+}
+
+#pulsanteInserimento:pressed, #pulsanteEliminazioneFoto:pressed{
+    -fx-background-color: buttonPressedColor;
+}
+
+
+
+
+
+
+
+
+
+#searchByTitle{
+    -fx-focus-color: transparent;
+}
+
+#researchButton{
+    -fx-focus-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+/* PAGINA LOGIN/REGISTRAZIONE */
+
+.split-pane:horizontal > .split-pane-divider {
+   -fx-background-color: loginRegPageSeparatorColor;
+}
+
+
+
+#loginPage{
+    -fx-background-color: pageColorOne;
+}
+
+#regoleUsername{
+
+    -fx-padding: 6 20 15 5;
+    -fx-background-radius: 5;
+    -fx-background-color: rulesAndSecondaryButtonColor;
+
+}
+
+
+#regolePassword{
+
+    -fx-padding: 6 20 15 5;
+    -fx-background-radius: 5;
+    -fx-background-color: rulesAndSecondaryButtonColor;
+
+}
+
+
+
+/* REGOLE GENERALI PULSANTI E PULSANTE CAMBIO TEMA */
+
+#catalogo, #vendere, #informazioni, #carrello, #profilo, #cambiaTema, #sellButton, #loginButton, #registerButton {
+
+    -fx-background-color:
+        /*#ecebe9,
+        rgba(0,0,0,0.05),
+        linear-gradient(#dcca8a, #c7a740),
+        linear-gradient(#f9f2d6 0%, #f4e5bc 20%, #e6c75d 80%, #e2c045 100%),*/
+        linear-gradient(#f6ebbe, #e6c34d);
+    -fx-background-insets: 8;    /* decide a che distanza dai bordi disegnare il background */
+    -fx-background-radius: 50;
+    -fx-padding: 15 30 15 30;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 18px;
+    -fx-text-fill: #311c09;
+
+}
+
+.button:hover {
+    -fx-cursor: hand;
+}
+
+
+#cambiaTema{
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+
+}
+
+
+
+/* COLORE PAGINA PRINCIPALE (I CONTORNI) */
+
+.tool-bar {
+    -fx-background-color: borderColor;
+}
+
+#anchorUnderTechWorld{
+    -fx-background-color: borderColor;
+}
+
+#hboxTechWorld{
+    -fx-background-color: borderColor;
+}
+
+
+
+.scroll-bar:vertical{
+    -fx-background-color: pageColorOne;
+}
+
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: scrollColor;
+
+}
+
+
+
+
+
+
+
+
+

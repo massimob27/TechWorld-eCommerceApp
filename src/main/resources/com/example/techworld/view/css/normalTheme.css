@@ -1,0 +1,95 @@
+* {
+    borderColor: #FF9429;
+    scrollColor: #FF9429;
+
+
+    pageColorOne: #F9FFF5;
+    loginRegPageSeparatorColor: #D9DED5;
+
+    stackPaneImageColor: #4DA6FF;
+
+
+
+
+    separatorAndBorderColor: gray;
+
+
+
+
+    articlePaneBGColor: white;
+    articlePaneBorderColor: black;
+
+
+    articleTitleFocusColor: #FF4805;
+
+
+
+
+
+
+
+
+    profilePaneColor: white;
+
+
+
+
+
+
+
+    orderListBorderColor: black;
+
+    ListViewTextColor: black;
+
+    cartPageDisplayColor: white;
+
+    cartInstanceRemoveHover: #292929;
+
+
+
+
+
+
+
+
+
+
+
+    /* PULSANTI */
+
+    addToCartButtonColorFirst: gold;       /* colore pulsante aggiunta al carrello dalla pagina articolo */
+    addToCartButtonColorSecond: #F2CA00;   /* quando il cursore ci va sopra */
+    addToCartButtonColorThird: #FFDD33;    /* colore quando premuto */
+
+
+
+
+
+   buyButtonsAndDownloadFirst: #3CC23C;
+   buyButtonsAndDownloadSecond: #35AB35;
+   buyButtonsAndDownloadThird: #44DB44;
+
+
+   coloredButtonText: white;
+
+
+   logoutButtonFirst: #C91010;
+   logoutButtonSecond: #D91111;
+   logoutButtonThird: #B30E0E;
+
+
+
+
+
+
+
+
+
+    rulesAndSecondaryButtonBGColor: #C7C7C7;
+    rulesAndSecondaryButtonColor: gainsboro;
+    buttonPressedColor: lightgray;
+
+
+
+
+}

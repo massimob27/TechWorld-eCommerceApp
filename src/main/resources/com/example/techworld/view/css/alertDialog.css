@@ -1,0 +1,49 @@
+.dialog-pane{
+
+  -fx-border-color: borderColor;
+
+  -fx-border-width: 2.0px;
+
+}
+
+.dialog-pane:header .header-panel {
+  -fx-background-color: headerBGColor;
+}
+
+
+.dialog-pane:header .header-panel .label{
+    -fx-background-color: headerBGColor;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 17;
+    -fx-font-weight: bold;
+
+}
+
+
+.dialog-pane > .content.label {
+
+
+
+    -fx-font-family: "Helvetica";
+
+    -fx-background-color: contentBGColor;
+
+    -fx-font-size: 15;
+
+
+}
+
+
+
+.dialog-pane > .button-bar > .container {
+  -fx-background-color: contentBGColor;
+}
+
+
+.dialog-pane .button{
+
+ }
+
+.dialog-pane .button:hover{
+    -fx-cursor: hand;
+}

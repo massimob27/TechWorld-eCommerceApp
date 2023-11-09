@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="732.0" prefWidth="1331.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.techworld.controller.LoginPageController">
+   <children>
+      <SplitPane fx:id="loginPage" dividerPositions="0.4" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane maxWidth="470.0" minWidth="470.0" prefHeight="587.0" prefWidth="470.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="135.0" layoutY="20.0" prefHeight="25.0" prefWidth="145.0" text="TechWorld" AnchorPane.leftAnchor="135.0" AnchorPane.rightAnchor="136.0" AnchorPane.topAnchor="20.0">
+                     <font>
+                        <Font name="Nunito Light" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="115.0" layoutY="54.0" prefHeight="37.0" prefWidth="229.0" text="Accedi al tuo account" underline="true" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="98.0" AnchorPane.topAnchor="54.0">
+                     <font>
+                        <Font name="Nunito ExtraBold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="55.0" layoutY="110.0" prefHeight="25.0" prefWidth="112.0" text="NOME UTENTE" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="255.0" AnchorPane.topAnchor="110.0">
+                     <font>
+                        <Font name="Nunito ExtraBold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="55.0" layoutY="310.0" prefHeight="25.0" prefWidth="91.0" text="PASSWORD" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="255.0" AnchorPane.topAnchor="310.0">
+                     <font>
+                        <Font name="Nunito ExtraBold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="loginButton" layoutX="114.0" layoutY="563.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="58.0" prefWidth="172.0" text="Accedi" AnchorPane.leftAnchor="114.0" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="563.0" />
+                  <PasswordField fx:id="loginPassword" layoutX="55.0" layoutY="335.0" prefHeight="44.0" prefWidth="220.0" promptText="Inserisci la tua password" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="126.0" AnchorPane.topAnchor="335.0">
+                     <font>
+                        <Font name="Nunito Regular" size="15.0" />
+                     </font>
+                  </PasswordField>
+                  <TextField fx:id="loginNomeUtente" layoutX="55.0" layoutY="135.0" prefHeight="44.0" prefWidth="220.0" promptText="Inserisci il tuo nome utente" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="126.0" AnchorPane.topAnchor="135.0">
+                     <font>
+                        <Font name="Nunito Regular" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="erroreLogin" layoutX="55.0" layoutY="231.0" prefHeight="31.0" prefWidth="289.0" visible="false" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="194.0">
+                     <font>
+                        <Font name="Nunito Regular" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="587.0" prefWidth="600.0">
+               <children>
+                  <Label fx:id="registrationLabel" layoutX="111.0" layoutY="5.0" prefHeight="44.0" prefWidth="706.0" text="Non possiedi un account? Registrati ora!" textFill="#906500" AnchorPane.leftAnchor="111.0" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="5.0">
+                     <font>
+                        <Font name="Nunito ExtraBold" size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="newUsername" layoutX="41.0" layoutY="96.0" prefHeight="44.0" prefWidth="220.0" promptText="Inserisci il tuo nome utente" AnchorPane.leftAnchor="41.0" AnchorPane.topAnchor="96.0">
+                     <font>
+                        <Font name="Nunito Regular" size="13.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="newPassword" layoutX="41.0" layoutY="309.0" prefHeight="44.0" prefWidth="220.0" promptText="Inserisci la tua password" AnchorPane.leftAnchor="41.0" AnchorPane.topAnchor="309.0">
+                     <font>
+                        <Font name="Nunito Regular" size="13.0" />
+                     </font>
+                  </PasswordField>
+                  <VBox fx:id="regolePassword" layoutX="53.0" layoutY="285.0" prefHeight="109.0" prefWidth="281.0" visible="false" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="360.0">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="131.0" text="La tua password:" wrapText="true">
+                           <font>
+                              <Font name="Nunito Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Deve contenere dai 10 ai 20 caratteri">
+                           <font>
+                              <Font name="Nunito Regular" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label text="Non può contenere spazi">
+                           <font>
+                              <Font name="Nunito Regular" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label text="Non può contenere caratteri speciali">
+                           <font>
+                              <Font name="Nunito Regular" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="regoleUsername" layoutX="127.0" layoutY="168.0" prefHeight="96.0" prefWidth="281.0" visible="false" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="146.0">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="131.0" text="Il tuo nome utente:">
+                           <font>
+                              <Font name="Nunito Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Deve contenere dai 5 ai 20 caratteri">
+                           <font>
+                              <Font name="Nunito Regular" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label text="Non può contenere spazi">
+                           <font>
+                              <Font name="Nunito Regular" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="210.0" text="Non può iniziare con un numero">
+                           <font>
+                              <Font name="Nunito Regular" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label text="Non può contenere caratteri speciali">
+                           <font>
+                              <Font name="Nunito Regular" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Label layoutX="42.0" layoutY="67.0" prefHeight="25.0" prefWidth="112.0" text="Nome utente *" AnchorPane.leftAnchor="42.0" AnchorPane.topAnchor="67.0">
+                     <font>
+                        <Font name="Nunito ExtraBold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="42.0" layoutY="280.0" prefHeight="25.0" prefWidth="91.0" text="Password *" AnchorPane.leftAnchor="42.0">
+                     <font>
+                        <Font name="Nunito ExtraBold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="newEmail" layoutX="446.0" layoutY="96.0" prefHeight="44.0" prefWidth="220.0" promptText="Inserisci la tua E-mail" AnchorPane.leftAnchor="446.0" AnchorPane.topAnchor="96.0">
+                     <font>
+                        <Font name="Nunito Regular" size="13.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="447.0" layoutY="67.0" prefHeight="25.0" prefWidth="112.0" text="E-mail *">
+                     <font>
+                        <Font name="Nunito ExtraBold" size="14.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="newConfirmPassword" layoutX="42.0" layoutY="542.0" prefHeight="44.0" prefWidth="220.0" promptText="Ripeti la tua password" AnchorPane.leftAnchor="42.0" AnchorPane.topAnchor="542.0">
+                     <font>
+                        <Font name="Nunito Regular" size="13.0" />
+                     </font>
+                  </PasswordField>
+                  <Label layoutX="43.0" layoutY="512.0" prefHeight="25.0" prefWidth="200.0" text="Conferma la tua password *">
+                     <font>
+                        <Font name="Nunito ExtraBold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="447.0" layoutY="485.0" prefHeight="58.0" prefWidth="365.0" text="Vuoi creare un account che rappresenti la tua azienda? Inizia ora! (Opzionale, per venditori)" wrapText="true" AnchorPane.leftAnchor="447.0" AnchorPane.topAnchor="485.0">
+                     <font>
+                        <Font name="Nunito ExtraBold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="355.0" layoutY="58.0" orientation="VERTICAL" prefHeight="588.0" prefWidth="7.0" AnchorPane.leftAnchor="355.0" AnchorPane.topAnchor="58.0" />
+                  <Label layoutX="447.0" layoutY="280.0" prefHeight="25.0" prefWidth="160.0" text="Numero di telefono *" AnchorPane.leftAnchor="447.0" AnchorPane.topAnchor="280.0">
+                     <font>
+                        <Font name="Nunito ExtraBold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="newTelephone" layoutX="439.0" layoutY="309.0" prefHeight="44.0" prefWidth="220.0" promptText="Inserisci il tuo numero di telefono" AnchorPane.leftAnchor="446.0" AnchorPane.topAnchor="309.0">
+                     <font>
+                        <Font name="Nunito Regular" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="newEmailAziendale" layoutX="446.0" layoutY="541.0" prefHeight="44.0" prefWidth="333.0" promptText="Inserisci l'indirizzo E-mail aziendale" AnchorPane.leftAnchor="446.0" AnchorPane.topAnchor="541.0">
+                     <font>
+                        <Font name="Nunito Regular" size="13.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="registerButton" layoutX="238.0" layoutY="692.0" mnemonicParsing="false" onAction="#registerAction" prefHeight="58.0" prefWidth="241.0" text="Registrati" AnchorPane.leftAnchor="238.0" />
+                  <Label fx:id="erroreEmail" layoutX="527.0" layoutY="70.0" prefHeight="20.0" prefWidth="241.0" visible="false" AnchorPane.leftAnchor="527.0" AnchorPane.topAnchor="70.0">
+                     <font>
+                        <Font name="Nunito Regular" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="erroreNumeroTelefono" layoutX="591.0" layoutY="283.0" prefHeight="20.0" prefWidth="241.0" visible="false" AnchorPane.leftAnchor="607.0" AnchorPane.topAnchor="283.0">
+                     <font>
+                        <Font name="Nunito Regular" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="erroreConfermaPassword" layoutX="446.0" layoutY="593.0" prefHeight="20.0" prefWidth="281.0" visible="false" AnchorPane.leftAnchor="41.0" AnchorPane.topAnchor="593.0">
+                     <font>
+                        <Font name="Nunito Regular" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="erroreEmailAziendale" layoutX="446.0" layoutY="593.0" prefHeight="20.0" prefWidth="306.0" visible="false" AnchorPane.leftAnchor="446.0" AnchorPane.topAnchor="593.0">
+                     <font>
+                        <Font name="Nunito Regular" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="erroreUtente" layoutX="157.0" layoutY="70.0" prefHeight="20.0" prefWidth="185.0" visible="false" AnchorPane.leftAnchor="157.0" AnchorPane.topAnchor="70.0">
+                     <font>
+                        <Font name="Nunito Regular" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="errorePassword" layoutX="133.0" layoutY="283.0" prefHeight="20.0" prefWidth="185.0" visible="false" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="283.0">
+                     <font>
+                        <Font name="Nunito Regular" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="erroreConfermaPassword2" layoutX="236.0" layoutY="516.0" prefHeight="20.0" prefWidth="58.0" visible="false" AnchorPane.leftAnchor="241.0" AnchorPane.topAnchor="516.0">
+                     <font>
+                        <Font name="Nunito Regular" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="erroreEmailAziendale2" layoutX="699.0" layoutY="515.0" prefHeight="20.0" prefWidth="58.0" visible="false" AnchorPane.leftAnchor="699.0" AnchorPane.topAnchor="515.0">
+                     <font>
+                        <Font name="Nunito Regular" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
